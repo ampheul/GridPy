@@ -4,24 +4,36 @@ import functools
 Double = Tuple[int, int]
 Triple = Tuple[int, int, int]
 
-def flat_to_matrix2d(rowsize: int, i : int) -> Tuple[int, int]:
-    return divmod(rowsize, i)
+def flat_to_matrix2d(m: int, i : int) -> Double:
+    return divmod(m, i)
 
-def matrix2d_to_flat(rowsize : int, i : int, j : int) -> int:
-    return i*rowsize + j 
-
-def flat_to_matrix3d(rowsize : int, columnsize: int, i: int) -> Tuple[int, int, int]:
-    z, y = divmod(rowsize*columnsize, i)
-    y, x = divmod(rowsize, y)
+def flat_to_matrix3d(l: int, m: int, i: int) -> Triple:
+    z, y = divmod(l*m, i)
+    y, x = divmod(l, y)
     return (x, y, z)
 
-def flat_to_diagonal(squareSize : int, i : int) -> int:
+def matrix2d_to_flat(n : int, i : int, j : int) -> int:
+    return i * n + j 
+
+def matrix2d_to_diagonal(m : int, i : int, j : int) -> Double:
+
+    return (i*n)
+
+def flat_to_diagonal(n : int, i : int) -> Double:
     '''
     flat_to_diagonal
     ================
-    Indexes the 
+    Sequences the squares on the grid using diagonal coordinates. 
+
     Returns
         Tuple[int,int]
     '''
+    return matrix2d_to_diagonal()
 
-map( range(10*10), functools.partial(flat_to_matrix2d) )
+flip_matrix2d_horizontal()
+
+if __name__ == '__main__':
+    def matrix_to_string(n : int):
+        for i in 
+    
+
