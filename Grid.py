@@ -1,4 +1,5 @@
 from typing import Tuple, Iterable
+from math import sqrt, floor
 import functools
 
 Double = Tuple[int, int]
@@ -56,7 +57,13 @@ def flat_to_diagonal(n : int, i : int) -> Tuple[int,int]:
     Double
     '''
     a_series = lambda x, y : (x + y) * (x - y + 1) // 2
-    return if int(sqrt(2*i+0.25) -0.5 )
+    if i < n*(n+1)//2:
+        # messy equation derived mathematically
+        return floor( sqrt( 2*i + 0.25 ) - 0.5 )
+    else:
+        # messier equation derived mathematically
+        return floor( n + 0.5 -sqrt( 2 * ( n * n - i) + 0.25 ) )
+
 
 def matrix2d_to_flat(m : int, i : int, j : int) -> int:
     '''
@@ -135,8 +142,11 @@ def diagonal_to_matrix2d(n : int, a : int, b: int) -> Tuple[int, int]:
 #ToDO : Flip rotate and transpose. 
 
 if __name__ == '__main__':
+
     def matrix_to_string(n : int):
+
         for i in range(10):
+            
             pass
     
 
