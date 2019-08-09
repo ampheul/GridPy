@@ -13,7 +13,7 @@ labellings of the
 '''
 
 
-def flat_to_matrix2d(m: int, i : int) -> Tuple[int, int]:
+def flat_to_matrix2d(n: int, i : int) -> Tuple[int, int]:
     '''
     flat_to_matrix2d
     ================
@@ -21,9 +21,9 @@ def flat_to_matrix2d(m: int, i : int) -> Tuple[int, int]:
 
     Parameters
     ----------
-    m : int
-        The row size of the matrix. 
-        We do not need the columnsize because we do not check bounds.
+    n : int
+        The number of columns in the matrix
+        We do not need the number of rows because we do not check bounds.
     i : int
         the index in the array to convert
     
@@ -31,12 +31,14 @@ def flat_to_matrix2d(m: int, i : int) -> Tuple[int, int]:
     -------
     Tuple[int, int]
     '''
-    return divmod(i, m)
+    return divmod(i, n)
+
 
 def flat_to_matrix3d(l: int, m: int, i: int) -> Tuple[int,int,int]:
     z, y = divmod(i, l*m)
     y, x = divmod(i, l)
     return (x, y, z)
+
 
 def flat_to_diagonal(n : int, i : int) -> Tuple[int,int]:
     '''
@@ -56,16 +58,19 @@ def flat_to_diagonal(n : int, i : int) -> Tuple[int,int]:
     -------
     Double
     '''
-    a_series = lambda x, y : (x + y) * (x - y + 1) // 2
     if i < n*(n+1)//2:
         # messy equation derived mathematically
-        return floor( sqrt( 2*i + 0.25 ) - 0.5 )
+        a = floor( sqrt( 2*i + 0.25 ) - 0.5 )
+        b = i - (1+a)*a//2
+        return a,b
     else:
         # messier equation derived mathematically
-        return floor( n + 0.5 -sqrt( 2 * ( n * n - i) + 0.25 ) )
+        a = floor( n + 0.5 - sqrt( 2 * ( n * n - i) + 0.25 ) ) - 1
+        b = i - n*(n+1)//2 - (2*n-1-a)*a//2 - 1
+        return (n + a, b+1)
 
 
-def matrix2d_to_flat(m : int, i : int, j : int) -> int:
+def matrix2d_to_flat(n : int, i : int, j : int) -> int:
     '''
     matrix2d_to_flat
     ================
@@ -73,8 +78,8 @@ def matrix2d_to_flat(m : int, i : int, j : int) -> int:
 
     Parameters
     ----------
-    m : int
-        the row size of the matrix
+    n : int
+        the number of columns in the matrix
     i : int
         row index
     j : int
@@ -85,7 +90,8 @@ def matrix2d_to_flat(m : int, i : int, j : int) -> int:
     int
         the flat coordinate
     '''
-    return i * m + j
+    return i * n + j
+
 
 def matrix2d_to_diagonal(n : int, i : int, j : int) -> Tuple[int, int]:
     '''
@@ -109,8 +115,9 @@ def matrix2d_to_diagonal(n : int, i : int, j : int) -> Tuple[int, int]:
         The resultant diagonal coordinate.
     '''
     return  (
-        i+j,
-        j if i + j < n else n - i )
+        i + j,
+        j if i + j < n else n - i -1 )
+
 
 def diagonal_to_matrix2d(n : int, a : int, b: int) -> Tuple[int, int]:
     '''
@@ -122,12 +129,12 @@ def diagonal_to_matrix2d(n : int, a : int, b: int) -> Tuple[int, int]:
     Parameters
     ----------
     n : int
-        The row and column size for a square matrix.
+        The number of rows and columns for a square matrix.
         Diagonal coordinates are only defined for square matrices.
     a : int
-        The index of the diagonal.
+        The index *of* the diagonal.
     b : int
-        The index on the diagonal a.
+        The index *on* the diagonal.
 
     Returns
     -------
@@ -135,9 +142,12 @@ def diagonal_to_matrix2d(n : int, a : int, b: int) -> Tuple[int, int]:
         The resulting matrix coordinate.
     '''
     return (
-        a - b if a < n else n - b, 
-        b     if a < n else a + b - n )
+        a - b if a < n else n - b - 1, 
+        b     if a < n else a - n + 1 + b )
 
+
+def diagonal_to_flat(n : int, a : int, b : int) -> int:
+    return (a+1)*a//2 + b if a < n else n*(n+1)//2 + (3*n-1-a)*(a-n)//2 + b
 
 #ToDO : Flip rotate and transpose. 
 
