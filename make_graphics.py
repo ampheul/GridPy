@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 from PIL import Image, ImageDraw, ImageFont
 from typing import Iterable, Tuple, Callable, List
 import math
@@ -80,6 +82,17 @@ def matrix_graphic(
 
 if __name__ == '__main__':
     import sys
+
+    if len(sys.argv) < 3:
+
+        print("Must call make_graphics with arguments:")
+        print("\n\tmake_graphics n size")
+        print("\n\tn : int")
+        print("\t\tthe number of rows and columns")
+        print("\n\tsize : int")
+        print("\t\tthe width and height of the output.")
+        
+        sys.exit()
 
     n = int(sys.argv[1])
     size = int(sys.argv[2])
