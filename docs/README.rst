@@ -21,13 +21,17 @@ flat to matrix
 --------------
 
 .. image :: ../matrix.png
-    :scale: 50 %
+    :height: 256
+    :width: 256
+    :align: center
 
 flat to diagonal
 ----------------
 
 .. image :: ../diagonal.png
-    :scale: 50 %
+    :height: 256
+    :width: 256
+    :align: center
 
 Future updates
 --------------
