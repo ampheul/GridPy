@@ -16,6 +16,8 @@ Use
 
 Flat coordinates are array indices.
 They can be converted to matrix and diagonal coordinates.
+Matrix coordinates :math: `$(i,j)$` denote the :math: `$i$` th row and 
+:math: `j` th column of the matrix
 
 flat to matrix
 --------------
