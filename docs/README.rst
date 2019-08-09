@@ -20,12 +20,14 @@ They can be converted to matrix and diagonal coordinates.
 flat to matrix
 --------------
 
-.. image :: matrix.png
+.. image :: ../matrix.png
+    :scale: 50 %
 
 flat to diagonal
 ----------------
 
-.. image :: diagonal.png
+.. image :: ../diagonal.png
+    :scale: 50 %
 
 Future updates
 --------------
