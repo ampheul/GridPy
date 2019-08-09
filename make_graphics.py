@@ -17,11 +17,12 @@ def make_graphic(n: int, it : Iterable[Tuple[int,int]], name : str) -> None:
 
     def color(i : int):
         colors = [
-            (0,255,255),
-            (0,255, 0),
-            (255, 255, 0),
+            
+            #(,255,255),
+            #(0,255, 0),
+            #(255, 255, 0),
             (255, 0, 0),
-            (255, 0, 255),
+            #(255, 0, 255),
             (0,0, 255)
         ]
         j = int( (len(colors)-1)* i / (n*n) )

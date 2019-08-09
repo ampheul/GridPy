@@ -21,20 +21,24 @@ flat to matrix
 --------------
 
 .. image :: ../matrix.png
-    :height: 256
-    :width: 256
+    :height: 512
+    :width: 512
+    :alt: image missing
     :align: center
+    :scale: 50
 
 flat to diagonal
 ----------------
 
 .. image :: ../diagonal.png
-    :height: 256
-    :width: 256
+    :height: 512
+    :width: 512
+    :alt: image missing
     :align: center
+    :scale: 50
 
 Future updates
 --------------
 
-Future updates to this module may include flips and rotations for matrix coordinates,
-and diagonal coordinates for rectangles.
+Future updates to this module may include flips and rotations 
+for matrix coordinates, and diagonal coordinates for rectangles.
