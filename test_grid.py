@@ -18,7 +18,10 @@ def matrix2d_generator(m : int, n : int):
 class TestGrid(unittest.TestCase):
 
     def assertInvertibility(self, f, f_inv, domain, codomain):
+            
+            # extract generators so we can reuse them.
             domain, codomain = list(domain), list(codomain)
+
             # check f(f_inv) is the identity on the codomain
             self.assertEqual(
                 codomain,
@@ -45,6 +48,7 @@ class TestGrid(unittest.TestCase):
         )
 
     def test_correct_mapping(self):
+
         m = 5
         n = 8
         
@@ -71,6 +75,7 @@ class TestGrid(unittest.TestCase):
 
         m = 5
         n = 8
+
         self.assertInvertibility(
             lambda i : Grid.matrix2d_to_flat(n, *i),
             lambda i : Grid.flat_to_matrix2d(n, i),

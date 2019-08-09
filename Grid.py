@@ -59,12 +59,12 @@ def flat_to_diagonal(n : int, i : int) -> Tuple[int,int]:
     Double
     '''
     if i < n*(n+1)//2:
-        # messy equation derived mathematically
+        # complex equation derived mathematically
         a = floor( sqrt( 2*i + 0.25 ) - 0.5 )
         b = i - (1+a)*a//2
         return a,b
     else:
-        # messier equation derived mathematically
+        # more complex equation derived mathematically
         a = floor( n + 0.5 - sqrt( 2 * ( n * n - i) + 0.25 ) ) - 1
         b = i - n*(n+1)//2 - (2*n-1-a)*a//2 - 1
         return (n + a, b+1)
@@ -147,16 +147,26 @@ def diagonal_to_matrix2d(n : int, a : int, b: int) -> Tuple[int, int]:
 
 
 def diagonal_to_flat(n : int, a : int, b : int) -> int:
+    '''
+    diagonal_to_flat
+    ================
+    Convert diagonal coordinates to flat coordinates.
+
+    Parameters
+    ----------
+    n : int
+        The number of rows and columns for a square matrix.
+        Diagonal coordinates are only defined for square matrices.
+    a : int
+        The index *of* the diagonal.
+    b : int
+        The index *on* the diagonal.
+    
+    Returns
+    -------
+    int
+        The resulting flat coordinate.
+    '''
     return (a+1)*a//2 + b if a < n else n*(n+1)//2 + (3*n-1-a)*(a-n)//2 + b
 
 #ToDO : Flip rotate and transpose. 
-
-if __name__ == '__main__':
-
-    def matrix_to_string(n : int):
-
-        for i in range(10):
-            
-            pass
-    
-
