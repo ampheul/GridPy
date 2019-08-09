@@ -8,7 +8,7 @@ Overview
 --------
 GridPy is a well written and rigorously tested module of procedures for indexing over arrays.
 A major feature is the ability to use diagonal coordinates on square grids.
-Full documentation is available here.
+The api is fully documented and a sphinx html build will soon be available via github pages.
 
 Purpose
 -------
