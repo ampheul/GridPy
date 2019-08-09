@@ -29,6 +29,7 @@ def make_graphic(n: int, it : Iterable[Tuple[int,int]], name : str) -> None:
         j = int(j)
         return tuple( int( (1-t)*a + t*b ) for a,b in zip(colors[j], colors[j+1]) )
 
+
     i = 0
     for y, x in it:
         draw.rectangle( 
@@ -38,6 +39,8 @@ def make_graphic(n: int, it : Iterable[Tuple[int,int]], name : str) -> None:
 
         draw.text((x*squareSize,y*squareSize), str(i), font=fnt, fill=(0,0,0))
         i += 1
+    
+    # make the lines
     for i in range(n):
         draw.line( (0,i*squareSize, size, i*squareSize), fill=(0,0,0))
         draw.line( (i*squareSize, 0, i*squareSize, size), fill=(0,0,0))

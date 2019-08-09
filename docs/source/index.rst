@@ -10,7 +10,7 @@ Welcome to GridPy's documentation!
    :maxdepth: 2
    :caption: Contents:
     
-    Readme
+    ../Readme
 
 
 Indices and tables
