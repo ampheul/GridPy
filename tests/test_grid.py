@@ -9,6 +9,7 @@ def diagonal_generator(n : int):
         for b in ( range(0,a+1) if a < n else  range(0, 2*n-a -1) )
     )
 
+
 def matrix2d_generator(m : int, n : int):
     return (
         (i, j) for i in range(m) for j in range(n)
@@ -18,20 +19,20 @@ def matrix2d_generator(m : int, n : int):
 class TestGrid(unittest.TestCase):
 
     def assertInvertibility(self, f, f_inv, domain, codomain):
-            
-            # extract generators so we can reuse them.
-            domain, codomain = list(domain), list(codomain)
 
-            # check f(f_inv) is the identity on the codomain
-            self.assertEqual(
-                codomain,
-                list( map(lambda x: f(f_inv(x)), codomain) )
-            )
-            # check f_inv(f) is the identity on the domain
-            self.assertEqual(
-                domain,
-                list( map(lambda x: f_inv(f(x)), domain) )
-            )
+        # extract generators so we can reuse them.
+        list_domain, list_codomain = list(domain), list(codomain)
+
+        # check f(f_inv) is the identity on the codomain
+        self.assertEqual(
+            list_codomain,
+            list( map(lambda x: f(f_inv(x)), list_codomain) )
+        )
+        # check f_inv(f) is the identity on the domain
+        self.assertEqual(
+            list_domain,
+            list( map(lambda x: f_inv(f(x)), list_domain) )
+        )
     
     def test_generators(self):
         

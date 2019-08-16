@@ -8,13 +8,15 @@ Triple = Tuple[int, int, int]
 '''
 Grid
 ====
-This module provides functions to do convert between
-labellings of the
+:author: Thomas Vandeven
+
+This module provides functions for conversion between
+matrix2d, diagonal, and flat coordinates.
 '''
 
 
 def flat_to_matrix2d(n: int, i : int) -> Tuple[int, int]:
-    '''
+    """
     flat_to_matrix2d
     ================
     Convert 1d coordinates to 2d matrix coordinates.
@@ -30,7 +32,7 @@ def flat_to_matrix2d(n: int, i : int) -> Tuple[int, int]:
     Returns
     -------
     Tuple[int, int]
-    '''
+    """
     return divmod(i, n)
 
 
@@ -41,7 +43,7 @@ def flat_to_matrix3d(l: int, m: int, i: int) -> Tuple[int,int,int]:
 
 
 def flat_to_diagonal(n : int, i : int) -> Tuple[int,int]:
-    '''
+    """
     flat_to_diagonal
     ================
     Sequences the squares in diagonal coordinates on a square matrix. 
@@ -57,7 +59,7 @@ def flat_to_diagonal(n : int, i : int) -> Tuple[int,int]:
     Returns
     -------
     Double
-    '''
+    """
     if i < n*(n+1)//2:
         # complex equation derived mathematically
         a = floor( sqrt( 2*i + 0.25 ) - 0.5 )
@@ -71,7 +73,7 @@ def flat_to_diagonal(n : int, i : int) -> Tuple[int,int]:
 
 
 def matrix2d_to_flat(n : int, i : int, j : int) -> int:
-    '''
+    """
     matrix2d_to_flat
     ================
     Convert matrix2d coordinates into 1d flat coordinates.
@@ -89,7 +91,7 @@ def matrix2d_to_flat(n : int, i : int, j : int) -> int:
     -------
     int
         the flat coordinate
-    '''
+    """
     return i * n + j
 
 

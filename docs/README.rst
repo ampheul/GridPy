@@ -2,7 +2,6 @@
 GridPY
 ======
 
-:Author: Thomas Vandeven
 
 Overview
 --------
@@ -76,7 +75,7 @@ This module contains tests. If you would like to activate them, run:
 
 .. code::
 
-    $ python3 -m unittest test_grid.py
+    $ python3 -m unittest discover ./tests
     ...
     ----------------------------------------------------------------------
     Ran 3 tests in 0.001s
