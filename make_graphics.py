@@ -4,7 +4,7 @@ from PIL import Image, ImageDraw, ImageFont
 from typing import Iterable, Tuple, Callable, List
 import math
 import typing_extensions
-from GridPy import Grid
+import Grid
 
 def matrix_graphic(
     im : Image,
