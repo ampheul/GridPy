@@ -1,8 +1,7 @@
 ======
-GridPY
+GridPy
 ======
 
-:Author: Thomas Vandeven
 
 Overview
 --------
@@ -40,43 +39,49 @@ flat to matrix 2d
 ~~~~~~~~~~~~~~~~~
 
 .. figure :: ../matrix.png
-    :height: 512
-    :width: 512
+    :height: 400
+    :width: 400
     :alt: image missing
     :align: center
     :scale: 50
 
 **Code Example:**
 
->>>[ flat_to_matrix2d(4, i) for i in range(4*4) ]
+.. code-block :: shell
 
-[(0, 0), (0, 1), (0, 2), (0, 3), (1, 0), (1, 1), (1, 2), (1, 3),
-(2, 0), (2, 1), (2, 2), (2, 3), (3, 0), (3, 1), (3, 2), (3, 3)]
+    >>> [ Grid.flat_to_matrix2d(5, i) for i in range(5*5) ]
+    [(0, 0), (0, 1), (0, 2), (0, 3), (0, 4), (1, 0), (1, 1),
+     (1, 2), (1, 3), (1, 4), (2, 0), (2, 1), (2, 2), (2, 3),
+     (2, 4), (3, 0), (3, 1), (3, 2), (3, 3), (3, 4), (4, 0),
+     (4, 1), (4, 2), (4, 3), (4, 4)]
 
 flat to diagonal
 ~~~~~~~~~~~~~~~~
 
 .. image :: ../diagonal.png
-    :height: 512
-    :width: 512
+    :height: 400
+    :width: 400
     :alt: image missing
     :align: center
     :scale: 50
 
 **Code Example:**
 
->>>[ flat_to_diagonal(4, i) for i in range(4*4) ]
+.. code-block:: shell
 
-[(0, 0), (1, 0), (1, 1), (2, 0), (2, 1), (2, 2), (3, 0), (3, 1),
-(3, 2), (3, 3), (4, 0), (4, 1), (4, 2), (5, 0), (5, 1), (6, 0)]
+    >>> [ Grid.flat_to_diagonal(5, i) for i in range(5*5) ]
+    [(0, 0), (1, 0), (1, 1), (2, 0), (2, 1), (2, 2), (3, 0),
+     (3, 1), (3, 2), (3, 3), (4, 0), (4, 1), (4, 2), (4, 3),
+     (4, 4), (5, 0), (5, 1), (5, 2), (5, 3), (6, 0), (6, 1),
+     (6, 2), (7, 0), (7, 1), (8, 0)]
 
 Tests
 -----
 This module contains tests. If you would like to activate them, run:
 
-.. code::
+.. code :: shell
 
-    $ python3 -m unittest test_grid.py
+    $ python3 -m unittest discover tests
     ...
     ----------------------------------------------------------------------
     Ran 3 tests in 0.001s

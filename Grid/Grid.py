@@ -1,6 +1,6 @@
 from typing import Tuple, Iterable
 from math import sqrt, floor
-import functools
+
 
 Double = Tuple[int, int]
 Triple = Tuple[int, int, int]
@@ -8,9 +8,54 @@ Triple = Tuple[int, int, int]
 '''
 Grid
 ====
-This module provides functions to do convert between
-labellings of the
+:author: Thomas Vandeven
+:date: August 2019
+
+This module provides functions for conversion between different labelling.
+See pictures in Readme.rst for a visual describing coordinate mapping.
 '''
+
+def diagonal_generator(n : int):
+    '''
+    diagonal_generator
+    ==================
+    Generate the coordinates for the diagonals.
+
+    Parameters
+    ----------
+    n : int
+        the number of rows and columns of the square matrix.
+    
+    Returns
+    -------
+    A generator producing diagonal coordinates.
+    '''
+    return (
+        (a, b) 
+        for a in range(2*n-1)
+        for b in ( range(0,a+1) if a < n else  range(0, 2*n-a -1) )
+    )
+
+def matrix2d_generator(m : int, n : int):
+    '''
+    matrix2d_generator
+    ==================
+    Generate the coordinates for a matrix in lexicographical order.
+
+    Parameters
+    ----------
+    m : int
+        number of rows in the matrix.
+    n : int
+        number of columns in the matrix.
+    
+    Returns
+    -------
+    A generator producing matrix coordinates.
+    '''
+    return (
+        (i, j) for i in range(m) for j in range(n)
+    )
 
 
 def flat_to_matrix2d(n: int, i : int) -> Tuple[int, int]:
@@ -32,12 +77,6 @@ def flat_to_matrix2d(n: int, i : int) -> Tuple[int, int]:
     Tuple[int, int]
     '''
     return divmod(i, n)
-
-
-def flat_to_matrix3d(l: int, m: int, i: int) -> Tuple[int,int,int]:
-    z, y = divmod(i, l*m)
-    y, x = divmod(i, l)
-    return (x, y, z)
 
 
 def flat_to_diagonal(n : int, i : int) -> Tuple[int,int]:

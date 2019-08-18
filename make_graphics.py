@@ -4,7 +4,7 @@ from PIL import Image, ImageDraw, ImageFont
 from typing import Iterable, Tuple, Callable, List
 import math
 import typing_extensions
-import Grid
+from GridPy import Grid
 
 def matrix_graphic(
     im : Image,
@@ -20,8 +20,11 @@ def matrix_graphic(
 
     Parameters
     ----------
+    im : PIL.Image
+        The image to print on.
+
     n : int
-        the number of rows and column of the square
+        The number of rows and column of the square.
     
     coordinate: Callable[int, Tuple[int,int]]
         Get the matrix coordinate of the current flat index.
@@ -37,7 +40,7 @@ def matrix_graphic(
     Returns
     -------
     None
-        generates a file with filename name + '.png' in the current directory.
+        prints a square grid indexed by coordinate onto image.
     '''
     draw = ImageDraw.Draw(im)
 
@@ -53,6 +56,7 @@ def matrix_graphic(
 
     for i in range(n*n):
         
+        # x, y swapped order so we can show matrix coordinates
         y, x = coordinate(i)
         square = size/n
         draw.rectangle( 

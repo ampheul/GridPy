@@ -9,8 +9,9 @@ Welcome to GridPy's documentation!
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
-    
-    ../Readme
+
+   README
+   modules/modules
 
 
 Indices and tables

@@ -2,22 +2,35 @@ import unittest
 import Grid
 
 
+def diagonal_generator(n : int):
+    return (
+        (a, b) 
+        for a in range(2*n-1)
+        for b in ( range(0,a+1) if a < n else  range(0, 2*n-a -1) )
+    )
+
+def matrix2d_generator(m : int, n : int):
+    return (
+        (i, j) for i in range(m) for j in range(n)
+    )
+
+
 class TestGrid(unittest.TestCase):
 
     def assertInvertibility(self, f, f_inv, domain, codomain):
             
             # extract generators so we can reuse them.
-            list_domain, list_codomain = list(domain), list(codomain)
+            domain, codomain = list(domain), list(codomain)
 
             # check f(f_inv) is the identity on the codomain
             self.assertEqual(
-                list_codomain,
-                list( map(lambda x: f(f_inv(x)), list_codomain) )
+                codomain,
+                list( map(lambda x: f(f_inv(x)), codomain) )
             )
             # check f_inv(f) is the identity on the domain
             self.assertEqual(
-                list_domain,
-                list( map(lambda x: f_inv(f(x)), list_domain) )
+                domain,
+                list( map(lambda x: f_inv(f(x)), domain) )
             )
     
     def test_generators(self):
@@ -26,11 +39,11 @@ class TestGrid(unittest.TestCase):
         n = 8
 
         self.assertEqual(
-            len(list(Grid.diagonal_generator(n))),
+            len(list(diagonal_generator(n))),
             n**2
         )
         self.assertEqual(
-            len(list(Grid.matrix2d_generator(m, n))),
+            len(list(matrix2d_generator(m, n))),
             m*n
         )
 
@@ -46,7 +59,7 @@ class TestGrid(unittest.TestCase):
                     range(n*n) 
                 )
             ),
-            list(Grid.diagonal_generator(n))
+            list(diagonal_generator(n))
         )
         self.assertEqual(
             list(
@@ -55,7 +68,7 @@ class TestGrid(unittest.TestCase):
                     range(m*n) 
                 )
             ),
-            list(Grid.matrix2d_generator(m, n))
+            list(matrix2d_generator(m, n))
         )
 
     def test_invertibility(self):
@@ -66,20 +79,20 @@ class TestGrid(unittest.TestCase):
         self.assertInvertibility(
             lambda i : Grid.matrix2d_to_flat(n, *i),
             lambda i : Grid.flat_to_matrix2d(n, i),
-            Grid.matrix2d_generator(m, n),
+            matrix2d_generator(m, n),
             range(m*n)
         )
         self.assertInvertibility(
             lambda i : Grid.matrix2d_to_diagonal(n, *i),
             lambda i : Grid.diagonal_to_matrix2d(n, *i),
-            Grid.matrix2d_generator(m, n),
-            Grid.diagonal_generator(n)
+            matrix2d_generator(m, n),
+            diagonal_generator(n)
         )
         self.assertInvertibility(
             lambda i : Grid.flat_to_diagonal(n, i),
             lambda i : Grid.diagonal_to_flat(n, *i),
             range(n*n),
-            Grid.diagonal_generator(n)
+            diagonal_generator(n)
         )
         
 
