@@ -7,7 +7,8 @@ Overview
 --------
 GridPy is a well written and rigorously tested module of procedures for indexing over arrays.
 A major feature is the ability to use diagonal coordinates on square grids.
-Full documentation is available here.
+Full documentation is `available here
+<https://ampheul.github.io/GridPy/>`_.
 
 Purpose
 -------
@@ -31,7 +32,7 @@ Matrix coordinates *( i, j )* denote the *i* th row and
 *j* th column of the matrix. Rows are typically written
 left to right and rows written top to bottom.
 
-Diagonal coordinates for square arrays map *( a, b )* to the *a*th diagonal
+Diagonal coordinates for square arrays map *( a, b )* to the *a* th diagonal
 and the *b* th element of that diagonal.
 Diagonal lines travel up and to the right starting at the top left corner.
 
