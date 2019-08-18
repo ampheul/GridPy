@@ -31,7 +31,7 @@ Matrix coordinates *( i, j )* denote the *i* th row and
 *j* th column of the matrix. Rows are typically written
 left to right and rows written top to bottom.
 
-Diagonal coordinates for square arrays map *( a, b )* to the *a*th diagonal
+Diagonal coordinates for square arrays map *( a, b )* to the *a* th diagonal
 and the *b* th element of that diagonal.
 Diagonal lines travel up and to the right starting at the top left corner.
 

@@ -26,6 +26,7 @@ api:
 # target specifically for html so we can clone into gh-pages
 html: api
 	@$(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(GHPAGESDIR)" $(SPHINXOPTS) $(O)
+	@touch $(GHPAGESDIR)/html/.nojekyll
 # Catch-all target: route all unknown targets to Sphinx using the new
 # "make mode" option.  $(O) is meant as a shortcut for $(SPHINXOPTS).
 %: Makefile api
