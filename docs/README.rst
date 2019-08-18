@@ -7,7 +7,8 @@ Overview
 --------
 GridPy is a well written and rigorously tested module of procedures for indexing over arrays.
 A major feature is the ability to use diagonal coordinates on square grids.
-Full documentation is available here.
+Full documentation is `available here
+<https://ampheul.github.io/GridPy/>`_.
 
 Purpose
 -------

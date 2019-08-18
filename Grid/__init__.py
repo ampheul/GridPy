@@ -2,9 +2,6 @@ from typing import Tuple, Iterable
 from math import sqrt, floor
 
 
-Double = Tuple[int, int]
-Triple = Tuple[int, int, int]
-
 '''
 Grid
 ====
