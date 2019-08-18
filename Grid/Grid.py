@@ -95,7 +95,8 @@ def flat_to_diagonal(n : int, i : int) -> Tuple[int,int]:
 
     Returns
     -------
-    Double
+    Tuple[int, int]
+        The resulting diagonal coordinate.
     '''
     if i < n*(n+1)//2:
         # complex equation derived mathematically
