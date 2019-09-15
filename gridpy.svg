@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="512mm"
+   height="512mm"
+   viewBox="0 0 512 512"
+   version="1.1"
+   id="svg3719"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   sodipodi:docname="gridpy.svg">
+  <defs
+     id="defs3713">
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Drop Shadow"
+       id="filter6925">
+      <feFlood
+         flood-opacity="0.498039"
+         flood-color="rgb(0,0,0)"
+         result="flood"
+         id="feFlood6915" />
+      <feComposite
+         in="flood"
+         in2="SourceGraphic"
+         operator="out"
+         result="composite1"
+         id="feComposite6917" />
+      <feGaussianBlur
+         in="composite1"
+         stdDeviation="16.4"
+         result="blur"
+         id="feGaussianBlur6919" />
+      <feOffset
+         dx="6"
+         dy="6"
+         result="offset"
+         id="feOffset6921" />
+      <feComposite
+         in="offset"
+         in2="SourceGraphic"
+         operator="atop"
+         result="composite2"
+         id="feComposite6923" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Drop Shadow"
+       id="filter6937">
+      <feFlood
+         flood-opacity="0.498039"
+         flood-color="rgb(0,0,0)"
+         result="flood"
+         id="feFlood6927" />
+      <feComposite
+         in="flood"
+         in2="SourceGraphic"
+         operator="out"
+         result="composite1"
+         id="feComposite6929" />
+      <feGaussianBlur
+         in="composite1"
+         stdDeviation="16.4"
+         result="blur"
+         id="feGaussianBlur6931" />
+      <feOffset
+         dx="6"
+         dy="6"
+         result="offset"
+         id="feOffset6933" />
+      <feComposite
+         in="offset"
+         in2="SourceGraphic"
+         operator="atop"
+         result="composite2"
+         id="feComposite6935" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Drop Shadow"
+       id="filter6949">
+      <feFlood
+         flood-opacity="0.498039"
+         flood-color="rgb(0,0,0)"
+         result="flood"
+         id="feFlood6939" />
+      <feComposite
+         in="flood"
+         in2="SourceGraphic"
+         operator="out"
+         result="composite1"
+         id="feComposite6941" />
+      <feGaussianBlur
+         in="composite1"
+         stdDeviation="16.4"
+         result="blur"
+         id="feGaussianBlur6943" />
+      <feOffset
+         dx="6"
+         dy="6"
+         result="offset"
+         id="feOffset6945" />
+      <feComposite
+         in="offset"
+         in2="SourceGraphic"
+         operator="atop"
+         result="composite2"
+         id="feComposite6947" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Drop Shadow"
+       id="filter6961">
+      <feFlood
+         flood-opacity="0.498039"
+         flood-color="rgb(0,0,0)"
+         result="flood"
+         id="feFlood6951" />
+      <feComposite
+         in="flood"
+         in2="SourceGraphic"
+         operator="out"
+         result="composite1"
+         id="feComposite6953" />
+      <feGaussianBlur
+         in="composite1"
+         stdDeviation="16.4"
+         result="blur"
+         id="feGaussianBlur6955" />
+      <feOffset
+         dx="6"
+         dy="6"
+         result="offset"
+         id="feOffset6957" />
+      <feComposite
+         in="offset"
+         in2="SourceGraphic"
+         operator="atop"
+         result="composite2"
+         id="feComposite6959" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Drop Shadow"
+       id="filter6973">
+      <feFlood
+         flood-opacity="0.498039"
+         flood-color="rgb(0,0,0)"
+         result="flood"
+         id="feFlood6963" />
+      <feComposite
+         in="flood"
+         in2="SourceGraphic"
+         operator="out"
+         result="composite1"
+         id="feComposite6965" />
+      <feGaussianBlur
+         in="composite1"
+         stdDeviation="16.4"
+         result="blur"
+         id="feGaussianBlur6967" />
+      <feOffset
+         dx="6"
+         dy="6"
+         result="offset"
+         id="feOffset6969" />
+      <feComposite
+         in="offset"
+         in2="SourceGraphic"
+         operator="atop"
+         result="composite2"
+         id="feComposite6971" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Drop Shadow"
+       id="filter6985">
+      <feFlood
+         flood-opacity="0.498039"
+         flood-color="rgb(0,0,0)"
+         result="flood"
+         id="feFlood6975" />
+      <feComposite
+         in="flood"
+         in2="SourceGraphic"
+         operator="out"
+         result="composite1"
+         id="feComposite6977" />
+      <feGaussianBlur
+         in="composite1"
+         stdDeviation="16.4"
+         result="blur"
+         id="feGaussianBlur6979" />
+      <feOffset
+         dx="6"
+         dy="6"
+         result="offset"
+         id="feOffset6981" />
+      <feComposite
+         in="offset"
+         in2="SourceGraphic"
+         operator="atop"
+         result="composite2"
+         id="feComposite6983" />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.24748737"
+     inkscape:cx="36.275551"
+     inkscape:cy="952.28045"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:snap-object-midpoints="true"
+     inkscape:snap-text-baseline="true" />
+  <metadata
+     id="metadata3716">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,215)">
+    <rect
+       id="rect3729"
+       width="170.33957"
+       height="170.33957"
+       x="0.85563046"
+       y="-214.75568"
+       style="stroke-width:0.08819356;fill:#ff0000;filter:url(#filter6985)" />
+    <rect
+       id="rect3729-6"
+       width="170.33958"
+       height="170.33957"
+       x="171.19521"
+       y="-214.75568"
+       style="fill:#ff00ff;stroke-width:0.08819356;filter:url(#filter6937)" />
+    <rect
+       id="rect3729-7"
+       width="170.33957"
+       height="170.33957"
+       x="341.53479"
+       y="-214.75568"
+       style="stroke-width:0.08819356;fill:#0000ff;filter:url(#filter6925)" />
+    <rect
+       id="rect3729-5"
+       width="170.33957"
+       height="170.33957"
+       x="0.85565186"
+       y="-44.416107"
+       style="stroke-width:0.08819356;fill:#ffff00;filter:url(#filter6973)" />
+    <rect
+       id="rect3729-3"
+       width="170.33957"
+       height="170.33957"
+       x="171.19522"
+       y="-44.416107"
+       style="fill:#00ffff;stroke-width:0.08819356;filter:url(#filter6949)" />
+    <rect
+       id="rect3729-56"
+       width="170.33957"
+       height="170.33957"
+       x="0.85565186"
+       y="125.92346"
+       style="fill:#00ff00;stroke-width:0.08819356;filter:url(#filter6961)"
+       rx="0"
+       ry="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:178.47027588px;line-height:1.25;font-family:'Noto Mono';-inkscape-font-specification:'Noto Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:4.46177626"
+       x="33.259911"
+       y="-65.840286"
+       id="text4036"><tspan
+         sodipodi:role="line"
+         id="tspan4034"
+         x="33.259911"
+         y="-65.840286"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:178.47027588px;font-family:'Noto Mono';-inkscape-font-specification:'Noto Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:4.46177626">G</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="69.547623"
+       y="15.029771"
+       id="text4044"><tspan
+         sodipodi:role="line"
+         id="tspan4042"
+         x="69.547623"
+         y="24.659283"
+         style="stroke-width:0.26458332"></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:178.47027588px;line-height:1.25;font-family:'Noto Mono';-inkscape-font-specification:'Noto Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;opacity:0.9300001;fill:#666666;fill-opacity:1;stroke:none;stroke-width:4.46177626"
+       x="28.379887"
+       y="89.467003"
+       id="text4036-2"><tspan
+         sodipodi:role="line"
+         id="tspan4034-9"
+         x="28.379887"
+         y="89.467003"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:178.47027588px;font-family:'Noto Mono';-inkscape-font-specification:'Noto Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#666666;stroke-width:4.46177626">r</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:178.47027588px;line-height:1.25;font-family:'Noto Mono';-inkscape-font-specification:'Noto Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#666666;fill-opacity:1;stroke:none;stroke-width:4.46177626"
+       x="200.9416"
+       y="-62.049534"
+       id="text4036-1"><tspan
+         sodipodi:role="line"
+         id="tspan4034-2"
+         x="200.9416"
+         y="-62.049534"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:178.47027588px;font-family:'Noto Mono';-inkscape-font-specification:'Noto Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#666666;stroke-width:4.46177626">i</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:178.47027588px;line-height:1.25;font-family:'Noto Mono';-inkscape-font-specification:'Noto Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#666666;fill-opacity:1;stroke:none;stroke-width:4.46177626"
+       x="373.24191"
+       y="-103.18135"
+       id="text4036-7"><tspan
+         sodipodi:role="line"
+         id="tspan4034-0"
+         x="373.24191"
+         y="-103.18135"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:178.47027588px;font-family:'Noto Mono';-inkscape-font-specification:'Noto Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#666666;stroke-width:4.46177626">y</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:178.47027588px;line-height:1.25;font-family:'Noto Mono';-inkscape-font-specification:'Noto Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:4.46177626"
+       x="201.02876"
+       y="104.45571"
+       id="text4036-9"><tspan
+         sodipodi:role="line"
+         id="tspan4034-3"
+         x="201.02876"
+         y="104.45571"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:178.47027588px;font-family:'Noto Mono';-inkscape-font-specification:'Noto Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:4.46177626">P</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:178.47027588px;line-height:1.25;font-family:'Noto Mono';-inkscape-font-specification:'Noto Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#666666;fill-opacity:1;stroke:none;stroke-width:4.46177626"
+       x="33.390648"
+       y="278.01959"
+       id="text4036-6"><tspan
+         sodipodi:role="line"
+         id="tspan4034-06"
+         x="33.390648"
+         y="278.01959"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:178.47027588px;font-family:'Noto Mono';-inkscape-font-specification:'Noto Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#666666;stroke-width:4.46177626">d</tspan></text>
+  </g>
+</svg>

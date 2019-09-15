@@ -49,8 +49,11 @@ def matrix_graphic(
         i = math.floor( (len(colors) - 1) * gradient )
         t = ( len(colors) - 1 ) * gradient - i
         
-        combine_colors = lambda c1, c2 : tuple( 
-            int( (1-t)*a + t*b ) for a,b in zip(c1, c2) )
+        combine_colors = lambda c1, c2 : ( 
+            int( (1-t)*c1[0] + t*c2[0] ), 
+            int( (1-t)*c1[1] + t*c2[1] ), 
+            int( (1-t)*c1[2] + t*c2[2] )
+        )
 
         return combine_colors(*colors[i:i+2])
 

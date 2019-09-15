@@ -206,4 +206,28 @@ def diagonal_to_flat(n : int, a : int, b : int) -> int:
     '''
     return (a+1)*a//2 + b if a < n else n*(n+1)//2 + (3*n-1-a)*(a-n)//2 + b
 
-#ToDO : Flip rotate and transpose. 
+def matrix2d_flip_horizontal(m, n, i, j):
+    '''
+    matrix2d_flip_horizontal
+    ========================
+    mirror the matrix coordinate across the vertical bisector.
+    '''
+    return (i, n -1 -j)
+def matrix2d_flip_vertical(m, n, i, j):
+    '''
+    matrix2d_flip_vertical
+    ======================
+    mirror the matrix coordinate across the horizontal bisector.
+    '''
+    return (m-1-i, j)
+
+def matrix2d_rotate_square(n, i, j):
+    '''
+    matrix2d_rotate_square
+    ======================
+    rotate square matrix 90 degrees anti-clockwise.
+    '''
+    return n-j-1, i 
+
+def matrix2d_transpose(i, j):
+    return j, i

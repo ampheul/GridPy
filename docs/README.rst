@@ -1,6 +1,13 @@
+
+
+
 ======
 GridPy
 ======
+.. image :: ../gridpy128.png
+    :height: 128
+    :width: 128
+    :alt: logo
 
 
 Overview
@@ -20,7 +27,6 @@ have their uses, they are more algorithmically complex to implement.
 Furthermore, if you want to work with flat coordinates, matrix coordinates, 
 and diagonal coordinates all at once you will have to write
 a tedious list of procedures to get the job done.
-
 
 Use
 ---
