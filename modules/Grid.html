@@ -81,7 +81,11 @@
             
               <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../README.html">GridPy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../README.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../README.html#purpose">Purpose</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../README.html#use">Use</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../README.html#tests">Tests</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../README.html#future-updates">Future updates</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="modules.html">Grid</a><ul class="current">
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Grid package</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#module-Grid">Module contents</a></li>
@@ -159,12 +163,6 @@
 <h1>Grid package<a class="headerlink" href="#grid-package" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="module-Grid">
 <span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-Grid" title="Permalink to this headline">¶</a></h2>
-<dl class="attribute">
-<dt id="Grid.Triple">
-<code class="sig-prename descclassname">Grid.</code><code class="sig-name descname">Triple</code><a class="headerlink" href="#Grid.Triple" title="Permalink to this definition">¶</a></dt>
-<dd><p>alias of <code class="xref py py-class docutils literal notranslate"><span class="pre">typing.Tuple</span></code></p>
-</dd></dl>
-
 <dl class="function">
 <dt id="Grid.diagonal_generator">
 <code class="sig-prename descclassname">Grid.</code><code class="sig-name descname">diagonal_generator</code><span class="sig-paren">(</span><em class="sig-param">n: int</em><span class="sig-paren">)</span><a class="headerlink" href="#Grid.diagonal_generator" title="Permalink to this definition">¶</a></dt>
@@ -270,6 +268,18 @@ We do not need the number of rows because we do not check bounds.</p></li>
 </dd></dl>
 
 <dl class="function">
+<dt id="Grid.matrix2d_flip_horizontal">
+<code class="sig-prename descclassname">Grid.</code><code class="sig-name descname">matrix2d_flip_horizontal</code><span class="sig-paren">(</span><em class="sig-param">m</em>, <em class="sig-param">n</em>, <em class="sig-param">i</em>, <em class="sig-param">j</em><span class="sig-paren">)</span><a class="headerlink" href="#Grid.matrix2d_flip_horizontal" title="Permalink to this definition">¶</a></dt>
+<dd><p>mirror the matrix coordinate across the vertical bisector.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="Grid.matrix2d_flip_vertical">
+<code class="sig-prename descclassname">Grid.</code><code class="sig-name descname">matrix2d_flip_vertical</code><span class="sig-paren">(</span><em class="sig-param">m</em>, <em class="sig-param">n</em>, <em class="sig-param">i</em>, <em class="sig-param">j</em><span class="sig-paren">)</span><a class="headerlink" href="#Grid.matrix2d_flip_vertical" title="Permalink to this definition">¶</a></dt>
+<dd><p>mirror the matrix coordinate across the horizontal bisector.</p>
+</dd></dl>
+
+<dl class="function">
 <dt id="Grid.matrix2d_generator">
 <code class="sig-prename descclassname">Grid.</code><code class="sig-name descname">matrix2d_generator</code><span class="sig-paren">(</span><em class="sig-param">m: int</em>, <em class="sig-param">n: int</em><span class="sig-paren">)</span><a class="headerlink" href="#Grid.matrix2d_generator" title="Permalink to this definition">¶</a></dt>
 <dd><p>Generate the coordinates for a matrix in lexicographical order.</p>
@@ -287,6 +297,12 @@ We do not need the number of rows because we do not check bounds.</p></li>
 <dd class="field-odd"><p>A generator producing matrix coordinates.</p>
 </dd>
 </dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="Grid.matrix2d_rotate_square">
+<code class="sig-prename descclassname">Grid.</code><code class="sig-name descname">matrix2d_rotate_square</code><span class="sig-paren">(</span><em class="sig-param">n</em>, <em class="sig-param">i</em>, <em class="sig-param">j</em><span class="sig-paren">)</span><a class="headerlink" href="#Grid.matrix2d_rotate_square" title="Permalink to this definition">¶</a></dt>
+<dd><p>rotate square matrix 90 degrees anti-clockwise.</p>
 </dd></dl>
 
 <dl class="function">
@@ -331,6 +347,11 @@ Diagonal coordinates are only defined for square matrices.</p></li>
 </dd>
 </dl>
 </dd></dl>
+
+<dl class="function">
+<dt id="Grid.matrix2d_transpose">
+<code class="sig-prename descclassname">Grid.</code><code class="sig-name descname">matrix2d_transpose</code><span class="sig-paren">(</span><em class="sig-param">i</em>, <em class="sig-param">j</em><span class="sig-paren">)</span><a class="headerlink" href="#Grid.matrix2d_transpose" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
 
 </div>
 </div>
